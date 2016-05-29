@@ -626,3 +626,7 @@
     background-repeat: no-repeat;
     margin-top: 5px;
 }
+
+.b-bottom-grey {
+    border-bottom: lightgrey solid 1px;
+}

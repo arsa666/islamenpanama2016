@@ -97,9 +97,9 @@
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
   </platform>
   <access origin="*"/>
-  <allow-intent href="http://*/*"/>
+  <allow-intent href="http://*/*" launch-external="yes"/>
   <allow-intent href="https://*/*"/>
-  <allow-intent href="tel:*"/>
+  <allow-intent href="tel:*" launch-external="yes" />
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*" launch-external="yes"/>
   <allow-intent href="geo:*"/>
