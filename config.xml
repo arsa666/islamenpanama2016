@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.islamenpanama2016" version="1.0.0">
   <name>islamenpanama2016</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+  <description>Islam en Panama</description>
+  <author email="islamenpanama@gmail.com">Arsalan Ahmed</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
@@ -101,7 +101,7 @@
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
-  <allow-intent href="mailto:*"/>
+  <allow-intent href="mailto:*" launch-external="yes"/>
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
