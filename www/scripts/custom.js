@@ -4,6 +4,7 @@ $(document).ready(function () {
     $.get('http://107.170.87.104/islamApi/namazDaily.php', function (obj) {
        var salahHorarioObj = JSON.parse(obj);
         $('#fecha').html(salahHorarioObj.fecha);
+        $('#sehrih').html(salahHorarioObj.sehrih);
         $('#fajr').html(salahHorarioObj.fajr);
         $('#salida-sol').html(salahHorarioObj.salidaSol);
         $('#zohar').html(salahHorarioObj.zohar);
