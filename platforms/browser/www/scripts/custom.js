@@ -14,6 +14,11 @@ $(document).ready(function () {
 
     });
 
+    $.get('http://107.170.87.104/islamApi/noticias.php', function (obj) {
+       var salahHorarioObj = JSON.parse(obj);
+        $('#noticia-content').html(salahHorarioObj.noticia);
+    });
+
     //FastClick
     $(function() {FastClick.attach(document.body);});
 
