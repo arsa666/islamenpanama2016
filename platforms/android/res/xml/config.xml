@@ -68,18 +68,18 @@
     <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
     <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
     <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-    <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
-    <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
-    <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
-    <splash density="land-xhdpi" src="www/res/screen/android/drawable-land-xhdpi-screen.png" />
-    <splash density="land-xxhdpi" src="www/res/screen/android/drawable-land-xxhdpi-screen.png" />
-    <splash density="land-xxxhdpi" src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
-    <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
-    <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
-    <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
-    <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
-    <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
-    <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+    <splash density="land-ldpi" src="www/res/screen/android/makkah-land-ldpi-screen.png" />
+    <splash density="land-mdpi" src="www/res/screen/android/makkah-land-mdpi-screen.png" />
+    <splash density="land-hdpi" src="www/res/screen/android/makkah-land-hdpi-screen.png" />
+    <splash density="land-xhdpi" src="www/res/screen/android/makkah-land-xhdpi-screen.png" />
+    <splash density="land-xxhdpi" src="www/res/screen/android/makkah-land-xxhdpi-screen.png" />
+    <splash density="land-xxxhdpi" src="www/res/screen/android/makkah-land-xxxhdpi-screen.png" />
+    <splash density="port-ldpi" src="www/res/screen/android/makkah-port-ldpi-screen.png" />
+    <splash density="port-mdpi" src="www/res/screen/android/makkah-port-mdpi-screen.png" />
+    <splash density="port-hdpi" src="www/res/screen/android/makkah-port-hdpi-screen.png" />
+    <splash density="port-xhdpi" src="www/res/screen/android/makkah-port-xhdpi-screen.png" />
+    <splash density="port-xxhdpi" src="www/res/screen/android/makkah-port-xxhdpi-screen.png" />
+    <splash density="port-xxxhdpi" src="www/res/screen/android/makkah-port-xxxhdpi-screen.png" />
     <allow-intent href="market:*" />
     <name>islamenpanama2016</name>
     <description>Islam en Panama</description>
@@ -88,6 +88,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <icon src="icon.png" />
+    <preference name="SplashScreenDelay" value="3000" />
     <access origin="*" />
     <allow-intent href="http://*/*" launch-external="yes" />
     <allow-intent href="https://*/*" />

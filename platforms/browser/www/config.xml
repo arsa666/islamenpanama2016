@@ -14,4 +14,8 @@
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="SplashScreen" value="www/res/screen/android/makkah-land-xxxhdpi-screen.png" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenWidth" value="600" />
+    <preference name="SplashScreenHeight" value="300" />
 </widget>
