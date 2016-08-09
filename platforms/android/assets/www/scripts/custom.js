@@ -15,14 +15,12 @@ $(document).ready(function () {
         });
     };
 
-
     var _fetchNoticias = function () {
         $.get('http://107.170.87.104/islamApi/noticias.php', function (obj) {
             var noticiaObj = JSON.parse(obj);
             $('#noticia-content').html(noticiaObj.noticia);
         });
     };
-
 
     $('#refrescar_namaz').click(function () {
         _fetchNamaz();
@@ -35,6 +33,10 @@ $(document).ready(function () {
     _fetchNamaz();
     _fetchNoticias();
 
+    $('#stream_radio').on('pause', function (event) {
+        this.src=null;
+        this.src='http://107.170.87.104:8000/stream';
+    });
 
     //FastClick
     $(function () {
