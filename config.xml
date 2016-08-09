@@ -33,18 +33,18 @@
     <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi"/>
     <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
     <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
-    <splash src="www/res/screen/android/drawable-land-ldpi-screen.png" density="land-ldpi"/>
-    <splash src="www/res/screen/android/drawable-land-mdpi-screen.png" density="land-mdpi"/>
-    <splash src="www/res/screen/android/drawable-land-hdpi-screen.png" density="land-hdpi"/>
-    <splash src="www/res/screen/android/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
-    <splash src="www/res/screen/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
-    <splash src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
-    <splash src="www/res/screen/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
-    <splash src="www/res/screen/android/drawable-port-mdpi-screen.png" density="port-mdpi"/>
-    <splash src="www/res/screen/android/drawable-port-hdpi-screen.png" density="port-hdpi"/>
-    <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
-    <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
-    <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+    <splash src="www/res/screen/android/makkah-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="www/res/screen/android/makkah-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="www/res/screen/android/makkah-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="www/res/screen/android/makkah-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="www/res/screen/android/makkah-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="www/res/screen/android/makkah-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="www/res/screen/android/makkah-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/makkah-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/makkah-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/makkah-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="www/res/screen/android/makkah-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="www/res/screen/android/makkah-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   <platform name="ios">
     <icon src="www/res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
@@ -96,6 +96,15 @@
     <icon src="www/res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
   </platform>
+  <!-- Splashscreen -->
+  <preference name="SplashScreenDelay" value="3000" />
+  <platform name="browser">
+    <preference name="SplashScreen" value="www/res/screen/android/makkah-land-xxxhdpi-screen.png" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenWidth" value="600" />
+    <preference name="SplashScreenHeight" value="300" />
+  </platform>
+  <!-- Splashscreen -->
   <access origin="*"/>
   <allow-intent href="http://*/*" launch-external="yes"/>
   <allow-intent href="https://*/*"/>
