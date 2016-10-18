@@ -1,0 +1,10 @@
+{
+  "name": "IslamEnPanama",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-compress": "^1.3.0"
+  }
+}
