@@ -1,14 +1,17 @@
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function(grunt){
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>',
-        uglify: {
+        pkg     : grunt.file.readJSON('package.json'),
+        banner  : '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
+                  '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>',
+        uglify  : {
             js: {
-                src: [
-                    'www/scripts/*.js',
+                src : [
+                    'www/scripts/jquery.js',
+                    'www/scripts/demo.js',
+                    'www/scripts/custom.js',
+                    'www/scripts/plugins.js'
                 ],
                 dest: 'www/app.js'
             }
@@ -18,8 +21,8 @@ module.exports = function (grunt) {
                 options: {
                     mode: 'gzip'
                 },
-                expand: false,
-                files: [
+                expand : false,
+                files  : [
                     {src: ['www/app.js'], dest: 'www/app.js.gz'}
                 ]
             }
