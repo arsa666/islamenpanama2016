@@ -26,13 +26,24 @@ module.exports = function(grunt){
                     {src: ['www/app.js'], dest: 'www/app.js.gz'}
                 ]
             }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'www/libs.css': ['www/styles/*.css'
+                    ]
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compress');
-
-
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'compress']);
+    grunt.registerTask('default', ['uglify', 'compress', 'cssmin']);
 };
