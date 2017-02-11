@@ -63,11 +63,11 @@
                 Mezquitas
 
             </a>
-            <a class="menu-item border-menu-white font-size-18 active-item" href="#actividades">
-                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                Noticias
+            <!--<a class="menu-item border-menu-white font-size-18 active-item" href="#actividades">-->
+                <!--<i class="fa fa-newspaper-o" aria-hidden="true"></i>-->
+                <!--Noticias-->
 
-            </a>
+            <!--</a>-->
             <a class="menu-item border-menu-white font-size-18 active-item" href="#subscribase">
                 <i class="fa fa-at" aria-hidden="true"></i>
                 Subscríbase
@@ -212,9 +212,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 t-align-center">
-                    <video id="stream_radio" controls="" name="media">
+                    <audio id="stream_radio" controls="" name="media" autoplay>
                         <source src="http://107.170.87.104:8000/stream" type="audio/mpeg">
-                    </video>
+                    </audio>
                 </div>
             </div>
             <div class="row">
@@ -308,19 +308,19 @@
         <div class="clear"></div>
 
         <div class="decoration hide-if-responsive"></div>
-        <div id="actividades" class="column-left p-top-15 container">
-            <div class="row">
-                <div class="bold col-xs-12 t-align-center font-size-22 p-bottom-10">
-                    <i class="fa fa-newspaper-o p-right-5" aria-hidden="true"></i>Noticias
-                </div>
-            </div>
-            <div id="noticia-content">
+        <!--<div id="actividades" class="column-left p-top-15 container">-->
+            <!--<div class="row">-->
+                <!--<div class="bold col-xs-12 t-align-center font-size-22 p-bottom-10">-->
+                    <!--<i class="fa fa-newspaper-o p-right-5" aria-hidden="true"></i>Noticias-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div id="noticia-content">-->
 
-            </div>
-            <div style="padding-top:5px; width: 100px;">
-                <input type="submit" value="Refrescar" name="refrescar_noticias" id="refrescar_noticias" class="submit form-control btn btn-primary btn-block">
-            </div>
-        </div>
+            <!--</div>-->
+            <!--<div style="padding-top:5px; width: 100px;">-->
+                <!--<input type="submit" value="Refrescar" name="refrescar_noticias" id="refrescar_noticias" class="submit form-control btn btn-primary btn-block">-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="clear"></div>
 
         <div class="decoration hide-if-responsive"></div>
@@ -371,3 +371,14 @@
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Subir</a>
 </div>
 </body>
+
+
+
+<script>
+
+setInterval(function() {
+    location.reload();
+}, 21600000);
+
+
+</script>
