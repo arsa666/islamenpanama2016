@@ -15,27 +15,21 @@ $(document).ready(function () {
         });
     };
 
-    var _fetchNoticias = function () {
-        $.get('http://107.170.87.104/islamApi/noticias.php', function (obj) {
-            var noticiaObj = JSON.parse(obj);
-            $('#noticia-content').html(noticiaObj.noticia);
-        });
-    };
-
     $('#refrescar_namaz').click(function () {
         _fetchNamaz();
     });
 
-    $('#refrescar_noticias').click(function () {
-        _fetchNoticias();
-    });
-
     _fetchNamaz();
-    _fetchNoticias();
 
     $('#stream_radio').on('pause', function (event) {
         this.src=null;
         this.src='http://107.170.87.104:8000/stream';
+    });
+
+    //madina masjid
+    $('#stream_radio2').on('pause', function (event) {
+        this.src=null;
+        this.src='http://107.170.87.104:8001/stream';
     });
 
     //FastClick
