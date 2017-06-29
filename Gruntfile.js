@@ -9,7 +9,6 @@ module.exports = function(grunt){
             js: {
                 src : [
                     'www/scripts/jquery.js',
-                    'www/scripts/demo.js',
                     'www/scripts/custom.js',
                     'www/scripts/plugins.js'
                 ],

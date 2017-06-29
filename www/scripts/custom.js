@@ -1,20 +1,107 @@
 $(document).ready(function () {
+    var salahHorarioObj = {};
+    var mezquitaNames = [
+        'Jama',
+        'Betania',
+        'Carrasquilla',
+        'Central',
+        'Madina',
+        'Loceria',
+        'Perejil',
+        'Villa Caceres'
+    ];
+
+    var marker = 0;
 
     var _fetchNamaz = function () {
         $.get('http://107.170.87.104/islamApi/namazDaily.php', function (obj) {
-            var salahHorarioObj = JSON.parse(obj);
+            salahHorarioObj = JSON.parse(obj);
             $('#fecha').html(salahHorarioObj.fecha);
             $('#sehrih').html(salahHorarioObj.sehrih);
-            $('#fajr').html(salahHorarioObj.fajr);
+            $('#fajr').html(salahHorarioObj.fajr_comienza);
             $('#salida-sol').html(salahHorarioObj.salidaSol);
-            $('#zohar').html(salahHorarioObj.zohar);
-            $('#asar').html(salahHorarioObj.asar);
-            $('#magrib').html(salahHorarioObj.magrib);
-            $('#isha').html(salahHorarioObj.isha);
+            $('#zohar').html(salahHorarioObj.zohar_comienza);
+            $('#asar').html(salahHorarioObj.asar_comienza);
+            $('#magrib').html(salahHorarioObj.magrib_comienza);
+            $('#isha').html(salahHorarioObj.isha_comienza);
 
+            $('#fajr_jammat').html(salahHorarioObj.fajr_jama);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_jama);
+            $('#asar_jammat').html(salahHorarioObj.asar_jama);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_jama);
+            $('#isha_jammat').html(salahHorarioObj.isha_jama);
         });
-
     };
+
+    function change_jammat_times(){
+        var mezquita = mezquitaNames[marker];
+        $('#mezquita-name').html(mezquita);
+
+        if (mezquita === 'Jama') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_jama);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_jama);
+            $('#asar_jammat').html(salahHorarioObj.asar_jama);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_jama);
+            $('#isha_jammat').html(salahHorarioObj.isha_jama);
+        } else if (mezquita === 'Betania') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_betania);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_betania);
+            $('#asar_jammat').html(salahHorarioObj.asar_betania);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_betania);
+            $('#isha_jammat').html(salahHorarioObj.isha_betania);
+        }else if (mezquita === 'Carrasquilla') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_carrasquilla);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_carrasquilla);
+            $('#asar_jammat').html(salahHorarioObj.asar_carrasquilla);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_carrasquilla);
+            $('#isha_jammat').html(salahHorarioObj.isha_carrasquilla);
+        }else if (mezquita === 'Central') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_central);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_central);
+            $('#asar_jammat').html(salahHorarioObj.asar_central);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_central);
+            $('#isha_jammat').html(salahHorarioObj.isha_central);
+        }else if (mezquita === 'Madina') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_madina);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_madina);
+            $('#asar_jammat').html(salahHorarioObj.asar_madina);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_madina);
+            $('#isha_jammat').html(salahHorarioObj.isha_madina);
+        }else if (mezquita === 'Loceria') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_loceria);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_loceria);
+            $('#asar_jammat').html(salahHorarioObj.asar_loceria);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_loceria);
+            $('#isha_jammat').html(salahHorarioObj.isha_loceria);
+        }else if (mezquita === 'Perejil') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_perejil);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_perejil);
+            $('#asar_jammat').html(salahHorarioObj.asar_perejil);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_perejil);
+            $('#isha_jammat').html(salahHorarioObj.isha_perejil);
+        }else if (mezquita === 'Villa Caceres') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_villa_caceres);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_villa_caceres);
+            $('#asar_jammat').html(salahHorarioObj.asar_villa_caceres);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_villa_caceres);
+            $('#isha_jammat').html(salahHorarioObj.isha_villa_caceres);
+        }
+    }
+
+    // Circle through an array.
+    function moveMarker(array, direction) {
+        marker = (marker + array.length + (direction ? 1 : -1)) % array.length;
+    }
+
+    $('#move-right').click(function () {
+        moveMarker(mezquitaNames, true);
+        change_jammat_times();
+    });
+
+    $('#move-left').click(function () {
+        moveMarker(mezquitaNames, false);
+        change_jammat_times();
+    });
 
 
     $('#refrescar_namaz').click(function () {
