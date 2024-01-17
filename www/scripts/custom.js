@@ -3,6 +3,7 @@ $(document).ready(function () {
     var mezquitaNames = [
         'Jama',
         'Betania',
+	'Metro',
         'Carrasquilla',
         'Central',
         'Madina',
@@ -49,6 +50,12 @@ $(document).ready(function () {
             $('#asar_jammat').html(salahHorarioObj.asar_betania);
             $('#magrib_jammat').html(salahHorarioObj.magrib_betania);
             $('#isha_jammat').html(salahHorarioObj.isha_betania);
+        }else if (mezquita === 'Metro') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_metro);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_metro);
+            $('#asar_jammat').html(salahHorarioObj.asar_metro);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_metro);
+            $('#isha_jammat').html(salahHorarioObj.isha_metro);
         }else if (mezquita === 'Carrasquilla') {
             $('#fajr_jammat').html(salahHorarioObj.fajr_carrasquilla);
             $('#zohar_jammat').html(salahHorarioObj.zohar_carrasquilla);
