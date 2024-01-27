@@ -3,13 +3,23 @@ $(document).ready(function () {
     var mezquitaNames = [
         'Jama',
         'Betania',
-	'Metro',
+	    'Metro',
         'Carrasquilla',
         'Central',
         'Madina',
         'Loceria',
         'Perejil',
-        'Villa Caceres'
+        'Villa Caceres',
+        'Darul U. Chorrera',
+        'Penonomé',
+        'Chitré',
+        'Santiago',
+        'David',
+        'Bugaba',
+        'Frontera',
+        'Changuinola',
+        'Margarita',
+        'Colón'
     ];
 
     var marker = 0;
@@ -92,6 +102,66 @@ $(document).ready(function () {
             $('#asar_jammat').html(salahHorarioObj.asar_villa_caceres);
             $('#magrib_jammat').html(salahHorarioObj.magrib_villa_caceres);
             $('#isha_jammat').html(salahHorarioObj.isha_villa_caceres);
+        }else if (mezquita === 'Darul U. Chorrera') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_darul_uloom_chorrera);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_darul_uloom_chorrera);
+            $('#asar_jammat').html(salahHorarioObj.asar_darul_uloom_chorrera);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_darul_uloom_chorrera);
+            $('#isha_jammat').html(salahHorarioObj.isha_darul_uloom_chorrera);
+        }else if (mezquita === 'Penonomé') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_penonome);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_penonome);
+            $('#asar_jammat').html(salahHorarioObj.asar_penonome);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_penonome);
+            $('#isha_jammat').html(salahHorarioObj.isha_penonome);
+        }else if (mezquita === 'Chitré') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_chitre);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_chitre);
+            $('#asar_jammat').html(salahHorarioObj.asar_chitre);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_chitre);
+            $('#isha_jammat').html(salahHorarioObj.isha_chitre);
+        }else if (mezquita === 'Santiago') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_santiago);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_santiago);
+            $('#asar_jammat').html(salahHorarioObj.asar_santiago);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_santiago);
+            $('#isha_jammat').html(salahHorarioObj.isha_santiago);
+        }else if (mezquita === 'David') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_david);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_david);
+            $('#asar_jammat').html(salahHorarioObj.asar_david);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_david);
+            $('#isha_jammat').html(salahHorarioObj.isha_david);
+        }else if (mezquita === 'Bugaba') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_bugaba);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_bugaba);
+            $('#asar_jammat').html(salahHorarioObj.asar_bugaba);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_bugaba);
+            $('#isha_jammat').html(salahHorarioObj.isha_bugaba);
+        }else if (mezquita === 'Frontera') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_frontera);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_frontera);
+            $('#asar_jammat').html(salahHorarioObj.asar_frontera);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_frontera);
+            $('#isha_jammat').html(salahHorarioObj.isha_frontera);
+        }else if (mezquita === 'Changuinola') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_changuinola);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_changuinola);
+            $('#asar_jammat').html(salahHorarioObj.asar_changuinola);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_changuinola);
+            $('#isha_jammat').html(salahHorarioObj.isha_changuinola);
+        }else if (mezquita === 'Margarita') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_margarita);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_margarita);
+            $('#asar_jammat').html(salahHorarioObj.asar_margarita);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_margarita);
+            $('#isha_jammat').html(salahHorarioObj.isha_margarita);
+        }else if (mezquita === 'Colón') {
+            $('#fajr_jammat').html(salahHorarioObj.fajr_colon);
+            $('#zohar_jammat').html(salahHorarioObj.zohar_colon);
+            $('#asar_jammat').html(salahHorarioObj.asar_colon);
+            $('#magrib_jammat').html(salahHorarioObj.magrib_colon);
+            $('#isha_jammat').html(salahHorarioObj.isha_colon);
         }
     }
 
