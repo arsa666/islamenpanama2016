@@ -25,7 +25,7 @@ $(document).ready(function () {
     var marker = 0;
 
     var _fetchNamaz = function () {
-        $.get('https://radioislampanama/islamApi/namazDaily.php', function (obj) {
+        $.get('https://radioislampanama.com/islamApi/namazDaily.php', function (obj) {
             salahHorarioObj = JSON.parse(obj);
             $('#fecha').html(salahHorarioObj.fecha);
             $('#sehrih').html(salahHorarioObj.sehrih);
